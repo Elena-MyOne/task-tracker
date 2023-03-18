@@ -1,0 +1,5 @@
+.text-parag {
+  &:not(:last-child) {
+    margin-bottom: 0.9em;
+  }
+}
