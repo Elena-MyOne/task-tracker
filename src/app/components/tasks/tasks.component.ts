@@ -15,4 +15,13 @@ export class TasksComponent implements OnInit {
   ngOnInit(): void {
     this.taskService.getTasks().subscribe((tasks) => this.tasks = tasks)
   }
+
+  deleteTask(task: Task): void {
+    this.taskService.deleteTask(task).subscribe(() => (this.tasks = this.tasks.filter((item) => item.id !== task.id)))
+  }
+
+  toggleReminder( task: Task) {
+    task.reminder = ! task.reminder;
+    this.taskService.updateTaskReminder(task).subscribe()
+  }
 }
