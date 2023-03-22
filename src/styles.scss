@@ -96,3 +96,14 @@ body {
 .error-message {
   color: $errorText;
 }
+
+.link {
+  color: $inputBorderActive;
+  transition: all 0.3s ease 0s;
+  &:hover{
+    color: $inputBorder;
+  }
+  &:active{
+    color: $inputBorder;
+  }
+}

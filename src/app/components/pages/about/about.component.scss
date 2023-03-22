@@ -1,0 +1,19 @@
+@import '../../../styles/variables';
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.about-title {
+  color: $inputBorderActive;
+  font-size: 1.5em;
+  margin-bottom: 0.9em;
+}
+.about-subtitle {
+  color: $mainColor;
+  margin-bottom: 0.9em;
+}
